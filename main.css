@@ -37,6 +37,7 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -68,4 +69,23 @@ span
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1092px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .biblioteca {
+        width: 100%;
+    }
+
+    .charts {
+        width: 100%;
+    }
+
+    .column {
+        flex-direction: row;
+    }
 }
